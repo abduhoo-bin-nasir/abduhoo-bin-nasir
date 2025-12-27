@@ -29,7 +29,7 @@ Computer Science student with an interest in problem-solving and building practi
 - Work on more structured and scalable projects
 ### Contact
 - Email: abduhoobinnasir@gmail.com
-- Linkdin: https://www.linkedin.com/in/abduhoo-bin-nasir/
+- Linkedin: https://www.linkedin.com/in/abduhoo-bin-nasir/
 <!--
 **abduhoo-bin-nasir/abduhoo-bin-nasir** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
