@@ -1,6 +1,3 @@
-<h1 align="center">Hi, I'm Abduhoo Qureshi 👋</h1>
-<h3 align="center">Computer Science Student · Game Developer</h3>
-
 ```
                       %%@@@@@%##*#                           Abduhoo Qureshi
               *@@@%#%%%##%#%%%%**##%@@@@%@%#*                -----------------
