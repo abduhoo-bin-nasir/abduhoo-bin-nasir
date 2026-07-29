@@ -18,6 +18,13 @@
 
 <br>
 
+### 🌱 Currently Working On
+
+- 🗺️ Migrating **Which Way, Good Sir?**'s multiplayer networking from WebSocket to Epic Online Services P2P
+- 🇩🇪 Studying German, working toward B2 level
+
+<br>
+
 ### 🛠️ Tech Stack
 
 <p align="left">
