@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-label="Abduhoo Bin Nasir. CS undergraduate at IST, Game Dev Lead at DevCore, Teaching Assistant for OOP.">
+<style>
+  text{font-family:'Courier New', Courier, 'DejaVu Sans Mono', 'Liberation Mono', monospace;}
+  .blink{animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{0%,60%{opacity:1}61%,100%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+
+  .gr{animation:gr 5s steps(1) infinite} .gg{animation:gg 5s steps(1) infinite}
+  @keyframes gr{0%,90%,94%,100%{transform:translate(0,0)}91%{transform:translate(5px,-1px)}92%{transform:translate(-4px,1px)}93%{transform:translate(3px,0)}}
+  @keyframes gg{0%,90%,94%,100%{transform:translate(0,0)}91%{transform:translate(-5px,1px)}92%{transform:translate(4px,-1px)}93%{transform:translate(-3px,0)}}
+  .roll{animation:roll 7s linear infinite}
+  @keyframes roll{from{transform:translateY(-40px)}to{transform:translateY(200px)}}
+</style>
+<defs>
+  <pattern id="sl" width="900" height="4" patternUnits="userSpaceOnUse"><rect width="900" height="2" y="2" fill="#000" fill-opacity=".14"/></pattern>
+  <radialGradient id="vg" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".65"/></radialGradient>
+  <linearGradient id="rl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb89a" stop-opacity="0"/><stop offset=".5" stop-color="#8fb89a" stop-opacity=".07"/><stop offset="1" stop-color="#8fb89a" stop-opacity="0"/></linearGradient>
+  <clipPath id="cl"><rect width="900" height="190" rx="10"/></clipPath>
+</defs>
+<rect width="900" height="190" rx="10" fill="#0c0a0a"/>
+<g clip-path="url(#cl)"><rect class="roll" width="900" height="40" fill="url(#rl)"/></g>
+<circle class="blink" cx="30" cy="31" r="4.5" fill="#d23a32"/>
+<text x="42" y="36" font-size="12" fill="#d23a32" letter-spacing="1">REC</text>
+<text x="80" y="36" font-size="12" fill="#8fb89a" letter-spacing="1">CAM 04 // IST LABS</text>
+<text x="872" y="36" font-size="12" fill="#8fb89a" letter-spacing="1" text-anchor="end">ARCHIVE // FILE 042</text>
+<g font-size="46" font-weight="bold" letter-spacing="8" text-anchor="middle">
+  <text class="gr" x="450" y="104" fill="#d23a32" fill-opacity=".75">ABDUHOO BIN NASIR</text>
+  <text class="gg" x="450" y="104" fill="#8fb89a" fill-opacity=".6">ABDUHOO BIN NASIR</text>
+  <text x="450" y="104" fill="#d8d0bd">ABDUHOO BIN NASIR</text>
+</g>
+<text x="450" y="146" font-size="14" fill="#8fb89a" letter-spacing="2" text-anchor="middle">CS UNDERGRAD @ IST  //  GAME DEV LEAD @ DEVCORE  //  TA (OOP)<tspan class="blink" fill="#d8d0bd"> _</tspan></text>
+<rect width="900" height="190" rx="10" fill="url(#sl)"/>
+<rect width="900" height="190" rx="10" fill="url(#vg)"/>
+<rect x="0.5" y="0.5" width="899" height="189" rx="10" fill="none" stroke="#2a2222"/>
+<line x1="24" y1="170" x2="876" y2="170" stroke="#a3201f" stroke-dasharray="2 6"/>
+</svg>

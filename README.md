@@ -1,62 +1,78 @@
-<h1 align="center">Hi, I'm Abduhoo 👋</h1>
+<p align="center">
+  <img src="./assets/banner.svg" alt="Abduhoo Bin Nasir: CS undergraduate at IST, Game Dev Lead at DevCore, Teaching Assistant (OOP)" width="100%">
+</p>
 
 <p align="center">
-  <img src="./neofetch.svg" alt="neofetch-style header" />
+  <img src="./assets/subject-file.svg" alt="Subject file: BS Computer Science at the Institute of Space Technology (2025-2029). Game Dev Lead at DevCore, Teaching Assistant (OOP). C++, Kotlin, GDScript, PHP, JS." width="100%">
+</p>
+
+I'm a Computer Science undergraduate at the **Institute of Space Technology (IST)**. I like building things from scratch: raycasting engines, multiplayer networking, and games with a bit of dread in them. I lead the game development wing at **DevCore** and work as a Teaching Assistant for OOP.
+
+**[Portfolio](https://abduhoo-bin-nasir.github.io)** · **[LinkedIn](https://www.linkedin.com/in/abduhoo-bin-nasir/)** · **[Email](mailto:abduhoobinnasir@gmail.com)**
+
+<br>
+
+<img src="./assets/sec-case-files.svg" alt="01 Case files" width="100%">
+
+| File | Project | Brief |
+|:---:|---|---|
+| `001` | 🗺️ **Which Way, Good Sir?** *(Cartographers)* | 5–15 player social-deduction dungeon-escape game in **Godot 4**. Procedural dungeon generation from a shared seed, fuel-based blind navigation, minimap rendering, asymmetric roles (Explorer / Cartographer / Mimic), and peer-to-peer multiplayer on Epic Online Services. |
+| `002` | 🔦 **Blood Sector** *(ShadowBreach)* | Doom-style raycasting survival horror in plain **C++** with Raylib and no game engine. Full OOP hierarchy, abstract `Entity` base class, enemy AI variants, level and sound management. |
+| `003` | 🤖 **Ustad-e-Karigar** | AI assistant built on speech-to-text and language-model backends. **Regional Finalist**, Alibaba Cloud AI Hackathon Pakistan 2026 (Open Innovation track). |
+| `004` | ⛓️ **Blockchain Simulator** | C++ / Raylib GUI simulating hashing, proof-of-work, mempool behavior, and multi-node consensus. |
+| `005` | 📖 **RSVP Speed Reader** | Android app (Kotlin + Jetpack Compose) that ingests PDFs/EPUBs and displays text word by word. First mobile dev project. |
+| `006` | 🍔 **Takeaway** | Full-stack food ordering web app: PHP/MySQL backend, admin panel, normalized schema, JOIN-heavy queries. |
+| `007` | ❌ **Ultimate Tic Tac Toe** | Nine tic tac toe boards in one 3×3 grid, built in C++ with Qt. The cell you pick decides which board your opponent plays next. |
+
+<br>
+
+<img src="./assets/sec-active.svg" alt="02 Active operations" width="100%">
+
+- 🗺️ Developing **Which Way, Good Sir?**, with multiplayer networking on Epic Online Services P2P
+- 🎮 Leading DevCore's game development wing: workshops, game jams, and mentoring juniors
+- 🇩🇪 Studying German, working toward B2
+
+<br>
+
+<img src="./assets/sec-equipment.svg" alt="03 Equipment" width="100%">
+
+<p>
+  <img src="https://img.shields.io/badge/C++-161212?style=flat-square&logo=cplusplus&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/C-161212?style=flat-square&logo=c&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/Python-161212?style=flat-square&logo=python&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/Kotlin-161212?style=flat-square&logo=kotlin&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/GDScript-161212?style=flat-square&logo=godotengine&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/PHP-161212?style=flat-square&logo=php&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/JavaScript-161212?style=flat-square&logo=javascript&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/SQL-161212?style=flat-square&logo=mysql&logoColor=8fb89a"/>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Godot_4-161212?style=flat-square&logo=godotengine&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/Raylib-161212?style=flat-square&logo=c&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/Qt-161212?style=flat-square&logo=qt&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/Jetpack_Compose-161212?style=flat-square&logo=jetpackcompose&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/MySQL-161212?style=flat-square&logo=mysql&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/CMake-161212?style=flat-square&logo=cmake&logoColor=8fb89a"/>
+  <img src="https://img.shields.io/badge/Git-161212?style=flat-square&logo=git&logoColor=8fb89a"/>
 </p>
 
 <br>
 
-### 🚀 Featured Projects
-
-| Project | Description |
-|---|---|
-| 🗺️ **Which Way, Good Sir?** *(Cartographers)* | 5–15 player social deduction dungeon-escape game in Godot 4. Procedural dungeon generation, fuel-based blind navigation, minimap rendering, asymmetric roles (Explorer / Cartographer / Mimic). Currently migrating from WebSocket to Epic Online Services P2P. |
-| 🔦 **Blood Sector** *(ShadowBreach)* | Doom-style raycasting survival horror built in C++ with Raylib — full OOP hierarchy, abstract `Entity` base class, enemy AI variants, level and sound management. |
-| ⛓️ **Blockchain Simulator** | C++ / Raylib GUI simulating hashing, proof-of-work, mempool behavior, and multi-node consensus. |
-| 📖 **RSVP Speed Reader** | Android app (Kotlin + Jetpack Compose) that ingests PDFs/EPUBs and displays text word-by-word. First mobile dev project. |
-| 🍔 **Takeaway** | Full-stack food ordering web app — PHP/MySQL backend, admin panel, normalized schema, JOIN-heavy queries. |
-
-<br>
-
-### 🌱 Currently Working On
-
-- 🗺️ Migrating **Which Way, Good Sir?**'s multiplayer networking from WebSocket to Epic Online Services P2P
-- 🇩🇪 Studying German, working toward B2 level
-
-<br>
-
-### 🛠️ Tech Stack
-
-<p align="left">
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GDScript-478CBF?style=for-the-badge&logo=godotengine&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-</p>
-<p align="left">
-  <img src="https://img.shields.io/badge/Godot_Engine-478CBF?style=for-the-badge&logo=godotengine&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Raylib-000000?style=for-the-badge&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-</p>
-
-<br>
-
-### 📈 GitHub Stats
+<img src="./assets/sec-field-record.svg" alt="04 Field record" width="100%">
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Abduhoo&show_icons=true&theme=tokyonight&hide_border=true"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abduhoo&layout=compact&theme=tokyonight&hide_border=true"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=abduhoo-bin-nasir&show_icons=true&hide_border=true&border_radius=6&bg_color=0c0a0a&title_color=d23a32&text_color=d8d0bd&icon_color=8fb89a&ring_color=d23a32"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abduhoo-bin-nasir&layout=compact&hide_border=true&border_radius=6&bg_color=0c0a0a&title_color=d23a32&text_color=d8d0bd"/>
 </p>
 
 <br>
 
-### 📫 Contact
+<img src="./assets/sec-contact.svg" alt="05 Contact" width="100%">
 
-<p align="left">
-  <a href="mailto:abduhoobinnasir@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/abduhoo-bin-nasir/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<p>
+  <a href="https://abduhoo-bin-nasir.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-a3201f?style=for-the-badge"/></a>
+  <a href="https://www.linkedin.com/in/abduhoo-bin-nasir/"><img src="https://img.shields.io/badge/LINKEDIN-2f4a3a?style=for-the-badge"/></a>
+  <a href="mailto:abduhoobinnasir@gmail.com"><img src="https://img.shields.io/badge/EMAIL-2f4a3a?style=for-the-badge"/></a>
 </p>
+
+<img src="./assets/footer.svg" alt="End of file" width="100%">

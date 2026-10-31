@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="70" viewBox="0 0 900 70" role="img" aria-label="End of file">
+<style>
+  text{font-family:'Courier New', Courier, 'DejaVu Sans Mono', 'Liberation Mono', monospace;}
+  .blink{animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{0%,60%{opacity:1}61%,100%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<rect width="900" height="70" rx="8" fill="#0c0a0a"/>
+<line x1="24" y1="22" x2="876" y2="22" stroke="#a3201f" stroke-dasharray="2 6"/>
+<text x="450" y="46" font-size="13" fill="#8fb89a" letter-spacing="3" text-anchor="middle">END OF FILE  //  CONNECTION TERMINATED<tspan class="blink" fill="#d23a32"> &#9608;</tspan></text>
+</svg>

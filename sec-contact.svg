@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="46" viewBox="0 0 900 46" role="img" aria-label="Contact">
+<style>
+  text{font-family:'Courier New', Courier, 'DejaVu Sans Mono', 'Liberation Mono', monospace;}
+  .blink{animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{0%,60%{opacity:1}61%,100%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<rect width="900" height="46" rx="6" fill="#0c0a0a"/>
+<rect x="0" y="0" width="4" height="46" rx="2" fill="#d23a32"/>
+<text x="22" y="29" font-size="15" fill="#d23a32" letter-spacing="1">[ 05 ]</text>
+<text x="92" y="30" font-size="19" font-weight="bold" fill="#d8d0bd" letter-spacing="4">CONTACT</text>
+<text x="872" y="28" font-size="11" fill="#8fb89a" letter-spacing="2" text-anchor="end">CHANNEL: OPEN</text>
+<rect class="blink" x="876" y="23" width="8" height="8" fill="#d23a32" transform="translate(0,-2)"/>
+<line x1="0" y1="45.5" x2="900" y2="45.5" stroke="#a3201f" stroke-opacity=".7"/>
+</svg>
