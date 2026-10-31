@@ -1,35 +1,30 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Abduhoo Bin Nasir: CS undergraduate at IST, Game Dev Lead at DevCore, Teaching Assistant (OOP)" width="100%">
+  <img src="./assets/banner.svg" alt="Abduhoo Bin Nasir: indie game developer and CS undergraduate at IST" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/subject-file.svg" alt="Subject file: BS Computer Science at the Institute of Space Technology (2025-2029). Game Dev Lead at DevCore, Teaching Assistant (OOP). C++, Kotlin, GDScript, PHP, JS." width="100%">
+  <img src="./assets/subject-file.svg" alt="Profile card: BS Computer Science at the Institute of Space Technology (2025-2029). Game Dev Lead at DevCore, Teaching Assistant (OOP). C++, Kotlin, GDScript, PHP, JS." width="100%">
 </p>
 
-I'm a Computer Science undergraduate at the **Institute of Space Technology (IST)**. I like building things from scratch: raycasting engines, multiplayer networking, and games with a bit of dread in them. I lead the game development wing at **DevCore** and work as a Teaching Assistant for OOP.
-
-**[Portfolio](https://abduhoo-bin-nasir.github.io)** · **[LinkedIn](https://www.linkedin.com/in/abduhoo-bin-nasir/)** · **[Email](mailto:abduhoobinnasir@gmail.com)**
+Indie game developer and Computer Science undergraduate at the **Institute of Space Technology (IST)**. I like building things from scratch: raycasting engines, multiplayer networking, and games with a bit of dread in them.
 
 <br>
 
 <img src="./assets/sec-case-files.svg" alt="01 Case files" width="100%">
 
-| File | Project | Brief |
-|:---:|---|---|
-| `001` | 🗺️ **Which Way, Good Sir?** *(Cartographers)* | 5–15 player social-deduction dungeon-escape game in **Godot 4**. Procedural dungeon generation from a shared seed, fuel-based blind navigation, minimap rendering, asymmetric roles (Explorer / Cartographer / Mimic), and peer-to-peer multiplayer on Epic Online Services. |
-| `002` | 🔦 **Blood Sector** *(ShadowBreach)* | Doom-style raycasting survival horror in plain **C++** with Raylib and no game engine. Full OOP hierarchy, abstract `Entity` base class, enemy AI variants, level and sound management. |
-| `003` | 🤖 **Ustad-e-Karigar** | AI assistant built on speech-to-text and language-model backends. **Regional Finalist**, Alibaba Cloud AI Hackathon Pakistan 2026 (Open Innovation track). |
-| `004` | ⛓️ **Blockchain Simulator** | C++ / Raylib GUI simulating hashing, proof-of-work, mempool behavior, and multi-node consensus. |
-| `005` | 📖 **RSVP Speed Reader** | Android app (Kotlin + Jetpack Compose) that ingests PDFs/EPUBs and displays text word by word. First mobile dev project. |
-| `006` | 🍔 **Takeaway** | Full-stack food ordering web app: PHP/MySQL backend, admin panel, normalized schema, JOIN-heavy queries. |
-| `007` | ❌ **Ultimate Tic Tac Toe** | Nine tic tac toe boards in one 3×3 grid, built in C++ with Qt. The cell you pick decides which board your opponent plays next. |
+| File | Project | Type | Brief |
+|:---:|---|---|---|
+| `001` | **Which Way, Good Sir?** *(Cartographers)* | 🎮 Game<br>Multiplayer | 5–15 player social-deduction dungeon-escape game in **Godot 4**. Procedural dungeon generation from a shared seed, fuel-based blind navigation, minimap rendering, asymmetric roles (Explorer / Cartographer / Mimic), and peer-to-peer multiplayer on Epic Online Services. |
+| `002` | **[Blood Sector](https://github.com/abduhoo-bin-nasir/Blood-Sector)** *(ShadowBreach)* | 🎮 Game<br>Horror FPS | Doom-style raycasting survival horror in plain **C++** with Raylib and no game engine. Full OOP hierarchy, abstract `Entity` base class, enemy AI variants, level and sound management. |
+| `003` | **Ustad-e-Karigar** | 🤖 AI app<br>Hackathon | AI assistant built on speech-to-text and language-model backends. **Regional Finalist**, Alibaba Cloud AI Hackathon Pakistan 2026 (Open Innovation track). |
+| `004` | **RSVP Speed Reader** | 📱 Android app | Kotlin + Jetpack Compose app that ingests PDFs/EPUBs and displays text word by word. First mobile dev project. |
+| `005` | **Takeaway** | 🌐 Web app | Full-stack food ordering web app: PHP/MySQL backend, admin panel, normalized schema, JOIN-heavy queries. |
 
 <br>
 
 <img src="./assets/sec-active.svg" alt="02 Active operations" width="100%">
 
 - 🗺️ Developing **Which Way, Good Sir?**, with multiplayer networking on Epic Online Services P2P
-- 🎮 Leading DevCore's game development wing: workshops, game jams, and mentoring juniors
 - 🇩🇪 Studying German, working toward B2
 
 <br>
@@ -60,10 +55,7 @@ I'm a Computer Science undergraduate at the **Institute of Space Technology (IST
 
 <img src="./assets/sec-field-record.svg" alt="04 Field record" width="100%">
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=abduhoo-bin-nasir&show_icons=true&hide_border=true&border_radius=6&bg_color=0c0a0a&title_color=d23a32&text_color=d8d0bd&icon_color=8fb89a&ring_color=d23a32"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abduhoo-bin-nasir&layout=compact&hide_border=true&border_radius=6&bg_color=0c0a0a&title_color=d23a32&text_color=d8d0bd"/>
-</p>
+<img src="./assets/field-record.svg" alt="GitHub record: public repositories, stars and top languages, updated daily" width="100%">
 
 <br>
 
