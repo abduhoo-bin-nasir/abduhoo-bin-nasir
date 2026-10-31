@@ -7,6 +7,8 @@ Change the photo:
     python scripts/make_card.py path/to/new-photo.jpg
     # optional: pick the crop yourself (x0,y0,x1,y1 in pixels of YOUR photo, keep it 4:5 portrait)
     python scripts/make_card.py photo.jpg --crop 140,170,800,995
+    # photo already edited/graded? keep its own colours instead of the green tint
+    python scripts/make_card.py photo.jpg --keep-color
 
 Change the text: edit ROWS / PROMPT below and run it again.
 Then:  git add -A && git commit -m "Update card" && git push
@@ -40,7 +42,7 @@ BG='#0c0a0a'; GREEN='#8fb89a'; BONE='#d8d0bd'; RED='#d23a32'; DIM='#5f564c'; LIN
 FONT="'Courier New', Courier, 'DejaVu Sans Mono', 'Liberation Mono', monospace"
 W, H = 340, 425
 
-def prep_photo(path, crop):
+def prep_photo(path, crop, keep_color=False):
     im = Image.open(path).convert('RGB')
     if crop:
         im = im.crop(crop)
@@ -50,9 +52,13 @@ def prep_photo(path, crop):
         x0 = (w - cw) // 2; y0 = int((h - ch) * 0.15)
         im = im.crop((x0, y0, x0 + cw, y0 + ch))
     im = im.resize((W, H), Image.LANCZOS)
-    g = ImageOps.autocontrast(ImageOps.grayscale(im), cutoff=1)
-    g = ImageEnhance.Brightness(ImageEnhance.Contrast(g).enhance(1.25)).enhance(1.05)
-    t = ImageOps.colorize(g, black='#050807', mid='#42604d', white='#d7eadc')
+    if keep_color:   # photo is already graded the way you like it: keep its colours
+        t = im.point(lambda v: int(255 * (v / 255) ** 0.72))      # lift the shadows a little so faces stay visible
+        t = ImageEnhance.Contrast(t).enhance(1.05)
+    else:            # default: green CCTV look
+        g = ImageOps.autocontrast(ImageOps.grayscale(im), cutoff=1)
+        g = ImageEnhance.Brightness(ImageEnhance.Contrast(g).enhance(1.25)).enhance(1.05)
+        t = ImageOps.colorize(g, black='#050807', mid='#42604d', white='#d7eadc')
     vig = Image.new('L', (W, H), 0)
     ImageDraw.Draw(vig).ellipse((-W*0.25, -H*0.15, W*1.25, H*1.15), fill=255)
     vig = vig.filter(ImageFilter.GaussianBlur(60))
@@ -128,8 +134,9 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description='Rebuild assets/subject-file.svg from a photo')
     ap.add_argument('photo'); ap.add_argument('--crop', help='x0,y0,x1,y1 in photo pixels')
     ap.add_argument('--out', default='assets/subject-file.svg')
+    ap.add_argument('--keep-color', action='store_true', help="don't tint the photo green")
     a = ap.parse_args()
     crop = tuple(int(v) for v in a.crop.split(',')) if a.crop else None
-    svg = build_svg(prep_photo(a.photo, crop))
+    svg = build_svg(prep_photo(a.photo, crop, a.keep_color))
     open(a.out, 'w', encoding='utf-8').write(svg)
     print('wrote', a.out, f'({len(svg)//1024} KB)')
