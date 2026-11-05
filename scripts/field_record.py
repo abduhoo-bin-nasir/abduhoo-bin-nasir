@@ -32,23 +32,38 @@ def collect():
 def render(d, stamp):
     total = sum(d['langs'].values()) or 1
     top = sorted(d['langs'].items(), key=lambda kv: -kv[1])[:5]
-    bars = ''
+    rest = total - sum(v for _, v in top)
+    if rest > 0: top.append(('Other', rest))
+    cols = [RED, GREEN, BONE, '#c9a227', '#6f8f9a', DIM]
+    def pct(v):
+        p = v * 100 / total
+        return '<1%' if 0 < p < 1 else f'{p:.0f}%'
+    bx, bw = 640, 520
+    bar, legend, x = '', '', bx
     for i, (name, val) in enumerate(top):
-        y = 76 + i * 26; pct = val * 100 / total
-        bars += (f'<text x="500" y="{y}" font-size="13" fill="{BONE}">{name[:14]}</text>'
-                 f'<rect x="620" y="{y-11}" width="190" height="12" fill="{TRACK}"/>'
-                 f'<rect x="620" y="{y-11}" width="{max(3, pct*1.9):.0f}" height="12" fill="{RED if i == 0 else GREEN}"/>'
-                 f'<text x="872" y="{y}" font-size="13" fill="{GREEN}" text-anchor="end">{pct:.0f}%</text>\n')
-    def stat(x, num, label):
-        return (f'<text x="{x}" y="100" font-size="46" font-weight="bold" fill="{BONE}">{num}</text>'
-                f'<text x="{x}" y="126" font-size="12" fill="{GREEN}" letter-spacing="2">{label}</text>\n')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-label="GitHub record: {d['repos']} public repositories, {d['stars']} stars.">
-<style>text{{font-family:{FONT};}}</style>
-<rect width="900" height="200" rx="8" fill="{BG}" stroke="{LINE}"/>
-{stat(40, d['repos'], 'PUBLIC REPOS')}{stat(220, d['stars'], 'STARS')}{stat(350, len(d['langs']), 'LANGUAGES')}
-<line x1="470" y1="26" x2="470" y2="174" stroke="{LINE}"/>
-<text x="500" y="46" font-size="12" fill="{RED}" letter-spacing="3">TOP LANGUAGES</text>
-{bars}<text x="40" y="176" font-size="11" fill="{DIM}" letter-spacing="1">SYNCED {stamp} // PUBLIC REPOS ONLY</text>
+        w = max(3, bw * val / total)
+        bar += f'<rect x="{x:.1f}" y="92" width="{max(1, w - 2):.1f}" height="24" fill="{cols[i]}"/>'
+        x += w
+        lx, ly = bx + (i % 2) * 270, 158 + (i // 2) * 28
+        legend += (f'<rect x="{lx}" y="{ly - 10}" width="11" height="11" fill="{cols[i]}"/>'
+                   f'<text x="{lx + 20}" y="{ly}" font-size="13" fill="{BONE}">{name[:16]}</text>'
+                   f'<text x="{lx + 240}" y="{ly}" font-size="13" fill="{GREEN}" text-anchor="end">{pct(val)}</text>')
+    def stat(x, num, label, sub):
+        return (f'<text x="{x}" y="130" font-size="58" font-weight="bold" fill="{BONE}">{num}</text>'
+                f'<text x="{x}" y="158" font-size="12" fill="{GREEN}" letter-spacing="3" font-weight="bold">{label}</text>'
+                f'<text x="{x}" y="178" font-size="10" fill="{DIM}" letter-spacing="2">{sub}</text>')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="GitHub record: {d['repos']} public repositories, {d['stars']} stars, {len(d['langs'])} languages.">
+<style>text{{font-family:{FONT};}}.b{{animation:bl 1.1s steps(1) infinite}}@keyframes bl{{0%,60%{{opacity:1}}61%,100%{{opacity:0}}}}@media (prefers-reduced-motion:reduce){{.b{{animation:none}}}}</style>
+<rect x=".5" y=".5" width="1199" height="249" rx="8" fill="#141010" stroke="{LINE}"/>
+<path d="M1 6a5 5 0 0 1 5-5h2v247h-2a5 5 0 0 1-5-5z" fill="{GREEN}"/>
+<text x="40" y="44" font-size="11" fill="{DIM}" letter-spacing="4">GITHUB RECORD // PUBLIC REPOS ONLY</text>
+<circle class="b" cx="1146" cy="40" r="4" fill="{RED}"/><text x="1132" y="44" font-size="11" fill="{GREEN}" letter-spacing="3" text-anchor="end">SYNCED {stamp}</text>
+<line x1="40" y1="60" x2="1160" y2="60" stroke="{LINE}"/>
+{stat(40, d['repos'], 'PUBLIC REPOS', 'OWNED, NOT FORKED')}{stat(250, d['stars'], 'STARS', 'ACROSS ALL REPOS')}{stat(420, len(d['langs']), 'LANGUAGES', 'EXCLUDING BUILD FILES')}
+<line x1="600" y1="80" x2="600" y2="214" stroke="{LINE}"/>
+<text x="640" y="82" font-size="11" fill="{RED}" letter-spacing="4" font-weight="bold">TOP LANGUAGES</text>
+<rect x="640" y="92" width="520" height="24" fill="{TRACK}"/>{bar}
+{legend}
 </svg>'''
 
 if __name__ == '__main__':

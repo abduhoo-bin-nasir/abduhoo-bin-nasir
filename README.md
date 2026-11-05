@@ -6,65 +6,58 @@
   <img src="./assets/subject-file.svg" alt="Profile card: BS Computer Science at the Institute of Space Technology (2025-2029). Game Dev Lead at DevCore, Teaching Assistant (OOP). C++, Kotlin, GDScript, PHP, JS." width="100%">
 </p>
 
-Indie game developer and Computer Science undergraduate at the **Institute of Space Technology (IST)**. I like building things from scratch: raycasting engines, multiplayer networking, and games with a bit of dread in them.
+Indie game developer and Computer Science undergraduate at the **Institute of Space Technology (IST)**. I like building things from scratch: raycasting engines, offline AI pipelines, and games with a bit of dread in them.
+
+<p align="center">
+  <img src="./assets/dossier.svg" alt="6 case files, 8 languages, 1 regional finalist placement, German B2 target in progress" width="100%">
+</p>
 
 <br>
 
 <img src="./assets/sec-case-files.svg" alt="01 Case files" width="100%">
 
-| File | Project | Type | Brief |
-|:---:|---|---|---|
-| `001` | **Which Way, Good Sir?** *(Cartographers)* | 🎮 Game<br>Multiplayer | 5–15 player social-deduction dungeon-escape game in **Godot 4**. Procedural dungeon generation from a shared seed, fuel-based blind navigation, minimap rendering, asymmetric roles (Explorer / Cartographer / Mimic), and peer-to-peer multiplayer on Epic Online Services. |
-| `002` | **[Blood Sector](https://github.com/abduhoo-bin-nasir/Blood-Sector)** *(ShadowBreach)* | 🎮 Game<br>Horror FPS | Doom-style raycasting survival horror in plain **C++** with Raylib and no game engine. Full OOP hierarchy, abstract `Entity` base class, enemy AI variants, level and sound management. |
-| `003` | **Ustad-e-Karigar** | 🤖 AI app<br>Hackathon | AI assistant built on speech-to-text and language-model backends. **Regional Finalist**, Alibaba Cloud AI Hackathon Pakistan 2026 (Open Innovation track). |
-| `004` | **RSVP Speed Reader** | 📱 Android app | Kotlin + Jetpack Compose app that ingests PDFs/EPUBs and displays text word by word. First mobile dev project. |
-| `005` | **Takeaway** | 🌐 Web app | Full-stack food ordering web app: PHP/MySQL backend, admin panel, normalized schema, JOIN-heavy queries. |
-
-<br>
-
-<img src="./assets/sec-active.svg" alt="02 Active operations" width="100%">
-
-- 🗺️ Developing **Which Way, Good Sir?**, with multiplayer networking on Epic Online Services P2P
-- 🇩🇪 Studying German, working toward B2
-
-<br>
-
-<img src="./assets/sec-equipment.svg" alt="03 Equipment" width="100%">
-
-<p>
-  <img src="https://img.shields.io/badge/C++-161212?style=flat-square&logo=cplusplus&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/C-161212?style=flat-square&logo=c&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/Python-161212?style=flat-square&logo=python&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/Kotlin-161212?style=flat-square&logo=kotlin&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/GDScript-161212?style=flat-square&logo=godotengine&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/PHP-161212?style=flat-square&logo=php&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/JavaScript-161212?style=flat-square&logo=javascript&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/SQL-161212?style=flat-square&logo=mysql&logoColor=8fb89a"/>
-</p>
-<p>
-  <img src="https://img.shields.io/badge/Godot_4-161212?style=flat-square&logo=godotengine&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/Raylib-161212?style=flat-square&logo=c&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/Qt-161212?style=flat-square&logo=qt&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/Jetpack_Compose-161212?style=flat-square&logo=jetpackcompose&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/MySQL-161212?style=flat-square&logo=mysql&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/CMake-161212?style=flat-square&logo=cmake&logoColor=8fb89a"/>
-  <img src="https://img.shields.io/badge/Git-161212?style=flat-square&logo=git&logoColor=8fb89a"/>
+<p align="center">
+  <a href="https://github.com/abduhoo-bin-nasir/watch-man"><img src="./assets/case-watch-man.svg" alt="File 001: Watch-Man. Game, detective and AI. Bleak 2030 first-person detective game in C++17 and Raylib with an ASCII raycasting engine, a rogue watch AI on an offline local voice pipeline (whisper.cpp, llama.cpp, Piper TTS), and DSA structures. Active." width="49%"></a>
+  <img src="./assets/case-cartographers.svg" alt="File 002: Which Way, Good Sir? (Cartographers). 5 to 15 player social-deduction dungeon-escape game in Godot 4 with peer-to-peer multiplayer on Epic Online Services. Active." width="49%">
+  <a href="https://github.com/abduhoo-bin-nasir/Blood-Sector"><img src="./assets/case-blood-sector.svg" alt="File 003: Blood Sector (ShadowBreach). Doom-style raycasting survival horror in plain C++ with Raylib and no game engine." width="49%"></a>
+  <img src="./assets/case-ustad.svg" alt="File 004: Ustad-e-Karigar. AI assistant on speech-to-text and language-model backends. Regional Finalist, Alibaba Cloud AI Hackathon Pakistan 2026." width="49%">
+  <img src="./assets/case-speedreader.svg" alt="File 005: RSVP Speed Reader. Kotlin and Jetpack Compose Android app that displays PDFs and EPUBs word by word." width="49%">
+  <img src="./assets/case-takeaway.svg" alt="File 006: Takeaway. Full-stack food ordering web app with a PHP and MySQL backend and an admin panel." width="49%">
 </p>
 
 <br>
 
-<img src="./assets/sec-field-record.svg" alt="04 Field record" width="100%">
+<img src="./assets/sec-evidence.svg" alt="02 Evidence board" width="100%">
+
+<img src="./assets/evidence-board.svg" alt="Evidence board linking all six projects to the subject, with red string between projects that share tech: Ustad-e-Karigar and Watch-Man share speech and language models, Watch-Man and Blood Sector share raycasting, Blood Sector and Which Way, Good Sir? share minimaps." width="100%">
+
+<br>
+
+<img src="./assets/sec-active.svg" alt="03 Active operations" width="100%">
+
+<img src="./assets/ops.svg" alt="Active operations: developing Watch-Man with offline LLM voice pipelines, C++ raycasting and DSA clue graphs; developing Which Way, Good Sir? with multiplayer networking on Epic Online Services P2P; studying German toward B2." width="100%">
+
+<br>
+
+<img src="./assets/sec-equipment.svg" alt="04 Equipment" width="100%">
+
+<img src="./assets/loadout.svg" alt="Equipment. Languages: C++, C, Python, Kotlin, GDScript, PHP, JavaScript, SQL. Engines and frameworks: Godot 4, Raylib, Qt, Jetpack Compose. Tools: MySQL, CMake, Git, VS Code. Offline AI: whisper.cpp, llama.cpp, Piper TTS." width="100%">
+
+<br>
+
+<img src="./assets/sec-field-record.svg" alt="05 Field record" width="100%">
 
 <img src="./assets/field-record.svg" alt="GitHub record: public repositories, stars and top languages, updated daily" width="100%">
 
 <br>
 
-<img src="./assets/sec-contact.svg" alt="05 Contact" width="100%">
+<img src="./assets/sec-contact.svg" alt="06 Contact" width="100%">
 
-<p>
-  <a href="https://abduhoo-bin-nasir.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-a3201f?style=for-the-badge"/></a>
-  <a href="https://www.linkedin.com/in/abduhoo-bin-nasir/"><img src="https://img.shields.io/badge/LINKEDIN-2f4a3a?style=for-the-badge"/></a>
-  <a href="mailto:abduhoobinnasir@gmail.com"><img src="https://img.shields.io/badge/EMAIL-2f4a3a?style=for-the-badge"/></a>
+<p align="center">
+  <a href="https://abduhoo-bin-nasir.github.io"><img src="./assets/btn-portfolio.svg" alt="Portfolio: abduhoo-bin-nasir.github.io" width="24%"></a>
+  <a href="https://github.com/abduhoo-bin-nasir"><img src="./assets/btn-github.svg" alt="GitHub: @abduhoo-bin-nasir" width="24%"></a>
+  <a href="https://www.linkedin.com/in/abduhoo-bin-nasir/"><img src="./assets/btn-linkedin.svg" alt="LinkedIn: in/abduhoo-bin-nasir" width="24%"></a>
+  <a href="mailto:abduhoobinnasir@gmail.com"><img src="./assets/btn-email.svg" alt="Email: abduhoobinnasir@gmail.com" width="24%"></a>
 </p>
 
 <img src="./assets/footer.svg" alt="End of file" width="100%">
